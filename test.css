@@ -1,0 +1,162 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Montserrat', monospace;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  background-color: #161616;
+}
+
+#containerp {
+  display: flex;
+  justify-content: space-between;
+  perspective: 800px;
+  width: 100%;
+  max-width: 800px; /* Mengatur lebar maksimum container */
+  height: 400px;
+  margin-top: 20px; /* Memberi jarak atas antara container dan body */
+}
+
+#containerp > div {
+  flex-basis: calc(20% - 10px); /* Mengatur lebar masing-masing elemen */
+  border-radius: 20px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+  overflow: hidden; /* Tambahkan properti overflow: hidden */
+}
+
+#containerp > div img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Tambahkan properti object-fit: cover */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-shadow: #AAC6C6 1px 10px;
+  font-size: 3vw;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+#containerp > div:hover .content {
+  opacity: 1;
+}
+
+#inner1 {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+}
+
+#inner2 {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+}
+
+#inner3 {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+}
+
+#inner4 {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+}
+
+#inner5 {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 58px rgba(82, 225, 226, 9.7);
+}
+
+#inner1:hover,
+#inner2:hover,
+#inner3:hover,
+#inner4:hover,
+#inner5:hover {
+  animation: tilt 6s infinite alternate;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotateX(0deg) rotateY(5deg);
+  }
+  25% {
+    transform: rotateY(5deg) rotateX(-5deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(-10deg);
+  }
+  75% {
+    transform: rotateX(-5deg) rotateX(-5deg);
+  }
+  100% {
+    transform: rotateX(20deg) rotateY(-20deg);
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-shadow: #AAC6C6 1px 10px;
+  font-size: 20px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+#inner:hover .content {
+  opacity: 1;
+}
